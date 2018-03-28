@@ -1,0 +1,64 @@
+@import 'abstract';
+.container{
+  height:100vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  height:30%;
+  color:white;
+  font-size: 3rem;
+  background-color: lighten($primary-col,10%);
+  &__top{
+    height:70%;
+    @include flx-center;
+    background-color: darken($main-left-col,15%);
+  &-left{
+    @include flx-center;
+  }
+  &-right{
+    @include flx-center;
+  }
+  }
+  &__navigation{
+    height:30%;
+    background-color: darken($main-left-col,5%);
+  }
+}
+.main-content{
+  background-color: lightblue;
+  height: 50%;
+  display: flex;
+  &__left{
+    background-color: darken(#ff4500,5%);
+    width:20%;
+    @include flx-center;
+    font-size: 3rem;
+    color: white;
+  }
+  &__middle{
+    background-color: darken(#ffc0cb,20%);
+    width:60%;
+    @include flx-center;
+    font-size: 3rem;
+    color: blue;
+  } 
+  &__right{
+    background-color: darken(#ffa500, 20%);
+    width:20%;
+    @include flx-center;
+    font-size: 3rem;
+    color: white;
+  }
+}
+.foot{
+  font-size: 2rem;
+  background-color: lighten(#000000,10%);
+  height: 20%;
+  color:white;
+  @include flx-center;
+}
+
+

@@ -1,0 +1,21 @@
+// Colors
+$primary-col:#ff4500;
+$main-left-col:#800080;
+$blk-col:#000000;
+// Base setting
+*, *::after, *::before{
+    box-sizing: inherit;
+    padding:0;margin:0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    box-sizing: border-box;
+  }
+  //mixins
+  @mixin flx-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
