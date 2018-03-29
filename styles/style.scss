@@ -60,5 +60,33 @@
   color:white;
   @include flx-center;
 }
+.top-container{
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  width:80%;
+  background-color: darken($main-left-col,14%);
+  height: 100%;
+  color:white;
+  font-size: 4rem;
+  &--nav{
+    background-color: darken($main-left-col,3%);
+  }
+}
+//btn
+.btn-txt{
+  &:link, &:visited{
+    text-decoration: none;
+    color:white;
+  }
+  &:active, &:focus{
+    border: none;
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+    color: blue;
+  }
+}
 
 
