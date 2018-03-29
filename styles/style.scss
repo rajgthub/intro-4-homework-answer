@@ -1,5 +1,4 @@
 @import 'abstract';
-@import './componets/popup';
 .container{
   height:100vh;
   background-color: gray;
@@ -74,6 +73,16 @@
     background-color: darken($main-left-col,3%);
   }
 }
+.header__navigation{
+  @include flx-center;
+}
+//navigaition
+.navigation{
+  &__list{
+    list-style: none;
+    justify-content: space-around;
+  }
+}
 //btn
 .btn-txt{
   &:link, &:visited{
@@ -87,6 +96,13 @@
   &:hover{
     cursor: pointer;
     color: blue;
+  }
+}
+.btn-nav{
+  @extend .btn-txt;
+  font-size: 2rem;
+  &:hover{
+    color: green;
   }
 }
 //popup
